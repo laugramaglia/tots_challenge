@@ -1,0 +1,11 @@
+version: '3.8' # Specify the Docker Compose file version
+
+services:
+  pocketbase:
+    build:
+      context: . # Use the current directory as the build context
+      dockerfile: Dockerfile # Specify the Dockerfile name if different
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./pb_data:/pb/data
