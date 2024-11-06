@@ -67,19 +67,24 @@ class _SliverList extends ConsumerWidget {
 
     final isInitialLoading = state.isLoading && clients.isEmpty;
 
-    return isInitialLoading
-        ? const SliverFillRemaining(
-            child: Center(child: CircularProgressIndicator()),
+    return state.hasError
+        ? SliverFillRemaining(
+            child:
+                Center(child: Text(state.asError?.error.toString() ?? 'Error')),
           )
-        : SliverList.builder(
-            itemCount: clients.length,
-            itemBuilder: (context, index) {
-              final customer = clients[index];
-              return _Item(
-                key: ValueKey(index),
-                customer: customer,
-              );
-            });
+        : isInitialLoading
+            ? const SliverFillRemaining(
+                child: Center(child: CircularProgressIndicator()),
+              )
+            : SliverList.builder(
+                itemCount: clients.length,
+                itemBuilder: (context, index) {
+                  final customer = clients[index];
+                  return _Item(
+                    key: ValueKey(index),
+                    customer: customer,
+                  );
+                });
   }
 }
 
@@ -208,8 +213,10 @@ class _LoadMoreButton extends StatelessWidget {
                   loading: () => const Center(
                         child: CircularProgressIndicator(),
                       ),
-                  error: (error, stackTrace) =>
-                      Center(child: Text(error.toString())),
+                  error: (error, stackTrace) {
+                    print(error.toString());
+                    return const SizedBox.shrink();
+                  },
                   data: (data) {
                     final isEmpty = data?.items?.isEmpty ?? true;
                     final isLastPage = data?.isLastPage;

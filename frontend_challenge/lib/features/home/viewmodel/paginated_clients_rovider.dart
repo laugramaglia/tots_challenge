@@ -54,7 +54,7 @@ class PaginatedClients extends _$PaginatedClients {
     // Handle failure by throwing an error
     if (response.isLeft()) {
       final error = response.getLeft().toNullable();
-      throw error!.message;
+      throw error!;
     }
 
     // Parse the response and update _paginated
