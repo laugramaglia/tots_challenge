@@ -1,0 +1,127 @@
+# flyctl launch added from frontend_challenge/.gitignore
+# Miscellaneous
+frontend_challenge/**/*.class
+frontend_challenge/**/*.log
+frontend_challenge/**/*.pyc
+frontend_challenge/**/*.swp
+frontend_challenge/**/.DS_Store
+frontend_challenge/**/.atom
+frontend_challenge/**/.buildlog
+frontend_challenge/**/.history
+frontend_challenge/**/.svn
+frontend_challenge/**/migrate_working_dir
+
+# IntelliJ related
+frontend_challenge/**/*.iml
+frontend_challenge/**/*.ipr
+frontend_challenge/**/*.iws
+frontend_challenge/**/.idea
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+frontend_challenge/**/**/doc/api
+frontend_challenge/**/**/ios/Flutter/.last_build_id
+frontend_challenge/**/.dart_tool
+frontend_challenge/**/.flutter-plugins
+frontend_challenge/**/.flutter-plugins-dependencies
+frontend_challenge/**/.pub-cache
+frontend_challenge/**/.pub
+frontend_challenge/build
+
+# Symbolication related
+frontend_challenge/**/app.*.symbols
+
+# Obfuscation related
+frontend_challenge/**/app.*.map.json
+
+# Android Studio will place build artifacts here
+frontend_challenge/android/app/debug
+frontend_challenge/android/app/profile
+frontend_challenge/android/app/release
+
+# flyctl launch added from frontend_challenge/android/.gitignore
+frontend_challenge/android/**/gradle-wrapper.jar
+frontend_challenge/android/.gradle
+frontend_challenge/android/captures
+frontend_challenge/android/gradlew
+frontend_challenge/android/gradlew.bat
+frontend_challenge/android/local.properties
+frontend_challenge/android/**/GeneratedPluginRegistrant.java
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/to/reference-keystore
+frontend_challenge/android/**/key.properties
+frontend_challenge/android/**/**/*.keystore
+frontend_challenge/android/**/**/*.jks
+
+# flyctl launch added from frontend_challenge/ios/.gitignore
+frontend_challenge/ios/**/**/dgph
+frontend_challenge/ios/**/*.mode1v3
+frontend_challenge/ios/**/*.mode2v3
+frontend_challenge/ios/**/*.moved-aside
+frontend_challenge/ios/**/*.pbxuser
+frontend_challenge/ios/**/*.perspectivev3
+frontend_challenge/ios/**/**/*sync
+frontend_challenge/ios/**/.sconsign.dblite
+frontend_challenge/ios/**/.tags*
+frontend_challenge/ios/**/**/.vagrant
+frontend_challenge/ios/**/**/DerivedData
+frontend_challenge/ios/**/Icon?
+frontend_challenge/ios/**/**/Pods
+frontend_challenge/ios/**/**/.symlinks
+frontend_challenge/ios/**/profile
+frontend_challenge/ios/**/xcuserdata
+frontend_challenge/ios/**/**/.generated
+frontend_challenge/ios/**/Flutter/App.framework
+frontend_challenge/ios/**/Flutter/Flutter.framework
+frontend_challenge/ios/**/Flutter/Flutter.podspec
+frontend_challenge/ios/**/Flutter/Generated.xcconfig
+frontend_challenge/ios/**/Flutter/ephemeral
+frontend_challenge/ios/**/Flutter/app.flx
+frontend_challenge/ios/**/Flutter/app.zip
+frontend_challenge/ios/**/Flutter/flutter_assets
+frontend_challenge/ios/**/Flutter/flutter_export_environment.sh
+frontend_challenge/ios/**/ServiceDefinitions.json
+frontend_challenge/ios/**/Runner/GeneratedPluginRegistrant.*
+
+# Exceptions to above rules.
+!frontend_challenge/ios/**/default.mode1v3
+!frontend_challenge/ios/**/default.mode2v3
+!frontend_challenge/ios/**/default.pbxuser
+!frontend_challenge/ios/**/default.perspectivev3
+
+# flyctl launch added from frontend_challenge/linux/.gitignore
+frontend_challenge/linux/**/flutter/ephemeral
+
+# flyctl launch added from frontend_challenge/macos/.gitignore
+# Flutter-related
+frontend_challenge/macos/**/**/Flutter/ephemeral
+frontend_challenge/macos/**/**/Pods
+
+# Xcode-related
+frontend_challenge/macos/**/**/dgph
+frontend_challenge/macos/**/**/xcuserdata
+
+# flyctl launch added from frontend_challenge/windows/.gitignore
+frontend_challenge/windows/**/flutter/ephemeral
+
+# Visual Studio user-specific files.
+frontend_challenge/windows/**/*.suo
+frontend_challenge/windows/**/*.user
+frontend_challenge/windows/**/*.userosscache
+frontend_challenge/windows/**/*.sln.docstates
+
+# Visual Studio build-related files.
+frontend_challenge/windows/**/x64
+frontend_challenge/windows/**/x86
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+frontend_challenge/windows/**/*.[Cc]ache
+# but keep track of directories ending in .cache
+!frontend_challenge/windows/**/*.[Cc]ache
+fly.toml

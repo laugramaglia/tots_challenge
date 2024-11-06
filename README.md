@@ -23,9 +23,9 @@ Completar libremente los elementos que considere faltantes en el diseño.
 ##  Admin panel
 
 Credentials adminpanel
-User: <admin@admin.com>
+User: admin@admin.com
 Pass: Password123
 
 Credenciales user:
-Email: <user@tots.agency>
+Email: user@tots.agency
 Contraseña: 123Qwerty

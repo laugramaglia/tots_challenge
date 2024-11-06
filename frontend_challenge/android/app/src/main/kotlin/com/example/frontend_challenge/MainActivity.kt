@@ -1,4 +1,4 @@
-package com.example.frontend_challenge
+package com.laureano.frontendchallenge
 
 import io.flutter.embedding.android.FlutterActivity
 
