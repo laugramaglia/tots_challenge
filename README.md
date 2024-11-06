@@ -20,12 +20,6 @@ Completar libremente los elementos que considere faltantes en el diseño.
 
 [figma](https://www.figma.com/file/dzuzxssHPePHIJ75Y4U1Jk/Flutter-Challenge?node-id=0%3A1)
 
-##  Admin panel
-
-Credentials adminpanel
-User: admin@admin.com
-Pass: Password123
-
-Credenciales user:
+## Credenciales user
 Email: user@tots.agency
 Contraseña: 123Qwerty
